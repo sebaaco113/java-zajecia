@@ -1,3 +1,5 @@
+import java.util.jar.JarOutputStream;
+
 public class Rak {
 
     public static void main(String[] args) {
@@ -5,14 +7,13 @@ public class Rak {
         dog.setName("ktos");
 
 
-        Animal pet = dog;
-        System.out.println(pet.name);
-        System.out.println(pet.species);
-
-        if (pet.getWeight() > 2) {
-            pet.walk();
+        System.out.println(dog.name);
+        System.out.println(dog.species);
+        System.out.println("twoja stara");
+        if (dog.getWeight() > 2) {
+            dog.walk();
         } else {
-            pet.feed();
+            dog.feed();
         }
 
     }
