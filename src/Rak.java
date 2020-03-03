@@ -1,5 +1,3 @@
-import java.util.jar.JarOutputStream;
-
 public class Rak {
 
     public static void main(String[] args) {
@@ -16,6 +14,16 @@ public class Rak {
             dog.feed();
         }
 
+        Car dirtyOne = new Car();
+        dirtyOne.producer = "Bentley";
+        dirtyOne.model = "Continental";
+        dirtyOne.yearOfProduction = 2019;
+        dirtyOne.plates = "GDA32342";
+
+        Human me = new Human ();
+        me.firstName = "Sebastian";
+        me.car = dirtyOne;
+        System.out.println(me.car.plates);
     }
 }
 
