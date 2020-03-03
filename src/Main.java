@@ -1,4 +1,4 @@
-import java.lang.reflect.Executable;
+import devices.Car;
 
 public class Main {
 
@@ -22,27 +22,36 @@ public class Main {
         dirtyOne.yearOfProduction = 2019;
         dirtyOne.setPlates("GDA32342");
 
-        Human me = new Human ();
+        Human me = new Human();
         me.firstName = "Sebastian";
+        me.lastName = "Kowalewski";
         me.setCar(dirtyOne);
         System.out.println(me.getCar().value);
 
-        Human wife = new Human ();
+        Human wife = new Human();
         wife.firstName = "Ania";
+        wife.lastName = "Tak";
         wife.setCar(dirtyOne);
-        System.out.println(wife.getCar().yearOfProduction);
 
-        if(me.getCar().value> me.budget)  {
+
+
+        System.out.println(wife.getCar());
+        System.out.println(me.getCar());
+        System.out.println(me);
+        System.out.println(wife);
+
+
+       /* if(me.getCar().value> me.budget)  {
             System.out.printf("you are poor");
         }else {
             System.out.printf("you can rent a car");
         }
 
-        }
+        }*/
 
     }
 
-
+}
 
 
 

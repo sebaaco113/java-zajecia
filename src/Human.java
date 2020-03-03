@@ -1,8 +1,7 @@
-import org.w3c.dom.ls.LSOutput;
+import devices.Car;
+import devices.Phone;
 
-import javax.crypto.spec.PSource;
-
-public class Human {
+public class Human extends Animal{
     public  String firstName;
     public String lastName;
     protected Phone mobile;
@@ -10,6 +9,10 @@ public class Human {
     private Double salary = 1000.0;
     private Car car;
     Double budget = salary * 0.4;
+
+    public Human() {
+        super("Homo sapiens");
+    }
 
 
     public Double  getSalary() {
@@ -26,5 +29,8 @@ public class Human {
 
     public void setCar(Car car) {
         this.car = car;
+    }
+    public String toString(){
+        return this.firstName + " " + this.lastName;
     }
 }

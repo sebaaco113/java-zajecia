@@ -1,9 +1,11 @@
+package devices;
+
 public class Car {
-    String model;
-    Integer yearOfProduction;
+    public String model;
+    public Integer yearOfProduction;
     private String plates;
-    String producer;
-    Integer value = 400;
+    public String producer;
+    public Integer value = 400;
 
     public String getPlates(){
         return plates;
@@ -16,5 +18,7 @@ public class Car {
             this.plates = plates;
         }
     }
-
+    public String toString(){
+        return this.producer + " " + this.model;
+    }
 }
