@@ -1,6 +1,6 @@
 package devices;
 
-public class Car {
+public class Car extends Device{
     public String model;
     public Integer yearOfProduction;
     private String plates;
@@ -20,5 +20,11 @@ public class Car {
     }
     public String toString(){
         return this.producer + " " + this.model;
+    }
+
+    @Override
+    public boolean turnOn() {
+        System.out.printf("Turn On");
+        return true;
     }
 }

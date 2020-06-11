@@ -27,7 +27,7 @@ public class Human extends Animal{
         return car;
     }
 
-    public void setCar(Car car) {
+    public static void setCar(Car car) {
         this.car = car;
     }
     public String toString(){

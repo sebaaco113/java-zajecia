@@ -1,4 +1,6 @@
 import devices.Car;
+import devices.Device;
+
 
 public class Main {
 
@@ -41,13 +43,21 @@ public class Main {
         System.out.println(wife);
 
 
-       /* if(me.getCar().value> me.budget)  {
-            System.out.printf("you are poor");
-        }else {
-            System.out.printf("you can rent a car");
-        }
 
-        }*/
+        System.out.println("-----------------------------");
+
+
+        Human.setCar(dirtyOne);
+
+        Device device = new Device() {
+            @Override
+            public boolean turnOn() {
+                System.out.println("Turn On");
+                return true;
+            }
+        };
+
+        device.turnOn();
 
     }
 
